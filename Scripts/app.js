@@ -1,3 +1,13 @@
+/*
+Filename : app.js
+@author Aayushi Shah
+@date June 22,2016
+StudentID : 300874124
+website : http://comp125-s2016-midterm-300874124.azurewebsites.net/
+@description : This file is the main javascript file for this web site
+*/
+
+
 // setup your IIFE (Immediately Invoked Function Expression)
 (function () {
 "use strict";
@@ -18,16 +28,16 @@
     paragraphElements[8] = document.getElementById("Ithaca");
     paragraphElements[9] = document.getElementById("Gavdos");
 
-    // define your paragraphs array
+    // defining paragraphs array
     var paragraphs = [];
 
     //create a reference to the firstname field
     var firstName = document.getElementById("firstName");
     //create a reference to the lastname field
     var lastName = document.getElementById("lastName");
-    //create a reference to the email field
-    var contactNumber = document.getElementById("contactNumber");
     //create a reference to the contactNumber field
+    var contactNumber = document.getElementById("contactNumber");
+    //create a reference to the email field
     var email = document.getElementById("email");
     //create a reference to the message field
     var message = document.getElementById("yourMessage");
