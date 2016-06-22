@@ -21,6 +21,45 @@
     // define your paragraphs array
     var paragraphs = [];
 
+    //create a reference to the firstname field
+    var firstName = document.getElementById("firstName");
+    //create a reference to the lastname field
+    var lastName = document.getElementById("lastName");
+    //create a reference to the email field
+    var email = document.getElementById("contactNumber");
+    //create a reference to the contactNumber field
+    var contactNumber = document.getElementById("email");
+    //create a reference to the message field
+    var message = document.getElementById("yourMessage");
+
+    //create a reference to the form
+    var contactForm = document.getElementById("contactForm");
+
+    if (contactForm){
+    //event listener with inline anonymous event handler function
+    contactForm.addEventListener("submit",function(event){
+        event.preventDefault();
+        showFormInput();
+        contactForm.reset();
+    });
+    }
+
+    function showFormInput() {
+        console.log("*****************************");
+        console.log("First Name: "+firstName.value);
+        console.log("*****************************");
+        console.log("Last Name: "+lastName.value);
+        console.log("*****************************");
+        console.log("Contact Number: "+contactNumber.value);
+        console.log("*****************************");
+        console.log("Email: "+email.value);
+        console.log("*****************************");
+        console.log("Message: "+yourMessage.value);
+        console.log("*****************************");
+
+    }
+
+
     // data for my pages
     paragraphs[0] = "Now is the time to travel to Greece. The country may be going through an economic crisis, but many travellers say that it hasn't impacted the experience of visiting. Plus, there may be some great deals.<br></br>Greece has 1,400 islands, though only 230 of them are inhabited.<br></br>And while everyone knows about Santorini and Mykonos, there are gorgeous lesser-known islands in Greece, too.";
     paragraphs[1] = "Folegandros is almost a Greek cliché, full of beautiful whitewashed houses with bright blue doors lining cobblestoned streets on steep cliffs. Rugged and remote, without chain hotels or package tours — not even a bank or ATM — and accessible only by ferry, the volcanic island boasts solitude in spades, secluded beaches, and incredible sunsets.";
