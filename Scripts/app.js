@@ -26,9 +26,9 @@
     //create a reference to the lastname field
     var lastName = document.getElementById("lastName");
     //create a reference to the email field
-    var email = document.getElementById("contactNumber");
+    var contactNumber = document.getElementById("contactNumber");
     //create a reference to the contactNumber field
-    var contactNumber = document.getElementById("email");
+    var email = document.getElementById("email");
     //create a reference to the message field
     var message = document.getElementById("yourMessage");
 
